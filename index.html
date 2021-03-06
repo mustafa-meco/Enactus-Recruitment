@@ -36,23 +36,23 @@
         <form id="myForm">
           <div class="form-group">
             <label for="name" id = "name-label">Name</label>
-            <input type="text" name="name" id = "name" class = "form-control" placeholder="Enter your name" required />
+            <input type="text" name="Name" id = "name" class = "form-control" placeholder="Enter your name" required />
           </div>
           <div class="form-group">
             <label for="email" id="email-label">Email</label>
-            <input type="email" id ="email" name="email" class="form-control" placeholder="Enter your Email" required />
+            <input type="email" id ="email" name="Email" class="form-control" placeholder="Enter your Email" required />
           </div>
           <div class="form-group">
             <label for="phone-number" id = "number-label">Phone Number</label>
-            <input type="tel" name="phone-number" id = "phone-number" class = "form-control" placeholder="Enter your phone number" required />
+            <input type="tel" name="Phone number" id = "phone-number" class = "form-control" placeholder="Enter your phone number" required />
           </div>
            <div class="form-group">
             <label for="number" id = "number-label">How many hours you intent to invest for this position weekly?</label>
-            <input type="number" name="number" id = "number" class = "form-control" max="168" min="1" placeholder="Enter number of hours" required />
+            <input type="number" name="hours" id = "number" class = "form-control" max="168" min="1" placeholder="Enter number of hours" required />
           </div>
           <div class="form-group">
             <p>Year</p>
-            <select name="year" id="dropdown" required>
+            <select name="Year" id="dropdown" required>
               <option disabled selected value>Select your current Year</option>
               <option value="1">Foundation</option>
               <option value="2">Year 2</option>
@@ -63,7 +63,7 @@
           </div>
           <div class="form-group">
             <p>Major (or expected)</p>
-            <select name="major" id="dropdown" required>
+            <select name="Major" id="dropdown" required>
               <option disabled selected value>Select your major (or expected)</option>
               <option value="ENV">Environmental</option>
               <option value="REE">Renewable</option>
@@ -79,40 +79,40 @@
           <div class = "form-group">
             <p>Which position you are interested in?</p>
             <label>
-              <input type="radio" name="position" value="Communication" class="input-radio" checked />Communication</label>
+              <input type="radio" name="committee" value="Communication" class="input-radio" checked />Communication</label>
             <label>
-              <input type="radio" name="position" value="MultiMedia" class="input-radio"  />MultiMedia</label>
+              <input type="radio" name="committee" value="MultiMedia" class="input-radio"  />MultiMedia</label>
             <label>
-              <input type="radio" name="position" value="HR" class="input-radio" />HR</label>
+              <input type="radio" name="committee" value="HR" class="input-radio" />HR</label>
             <label>
-              <input type="radio" name="position" value="Marketion" class="input-radio" />Marketing</label>
+              <input type="radio" name="committee" value="Marketion" class="input-radio" />Marketing</label>
             <label>
-              <input type="radio" name="position" value="IT" class="input-radio" />IT</label>
+              <input type="radio" name="committee" value="IT" class="input-radio" />IT</label>
             <label>
-              <input type="radio" name="position" value="presentation" class="input-radio" />Presentation</label>
-            <input type="radio" name="position" value="PM" class="input-radio" />PM</label>
+              <input type="radio" name="committee" value="presentation" class="input-radio" />Presentation</label>
+            <input type="radio" name="committee" value="PM" class="input-radio" />PM</label>
             <label>
           </div>
           <div class = "form-group">
             <p>Which second position you are interested in? (if any)</p>
             <label>
-              <input type="checkbox" name="position2" value="Communication" class="input-radio" />Communication</label>
+              <input type="checkbox" name="com.s" value="Communication" class="input-radio" />Communication</label>
             <label>
-              <input type="checkbox" name="position2"  value="MultiMedia" class="input-radio"  />MultiMedia</label>
+              <input type="checkbox" name="com.s"  value="MultiMedia" class="input-radio"  />MultiMedia</label>
             <label>
-              <input type="checkbox" name="position2" value="HR" class="input-radio" />HR</label>
+              <input type="checkbox" name="com.s" value="HR" class="input-radio" />HR</label>
             <label>
-              <input type="checkbox" name="position2"  value="Marketion" class="input-radio" />Marketing</label>
+              <input type="checkbox" name="com.s"  value="Marketion" class="input-radio" />Marketing</label>
             <label>
-              <input type="checkbox" name="position2"  value="IT" class="input-radio" />IT</label>
+              <input type="checkbox" name="com.s"  value="IT" class="input-radio" />IT</label>
             <label>
-              <input type="checkbox" name="position2"  value="presentation" class="input-radio" />Presentation</label>
-            <input type="checkbox" name="position2"  value="PM" class="input-radio" />PM</label>
+              <input type="checkbox" name="com.s"  value="presentation" class="input-radio" />Presentation</label>
+            <input type="checkbox" name="com.s"  value="PM" class="input-radio" />PM</label>
             <label>
           </div>
           <div class="form-group">
             <p>Why do you want to join this position or what is your motivation?</p>
-            <textarea name="motivation" id="textarea" placeholder="Enter your motivation..." class="input-textarea"></textarea>
+            <textarea name="mot." id="textarea" placeholder="Enter your motivation..." class="input-textarea"></textarea>
           </div>
           <div class="form-group">
             <button type="submit" id="submit" class="submit-button" onclick="SubForm()">Submit</button>
