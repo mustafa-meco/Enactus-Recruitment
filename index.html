@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Enactus Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class=container>
+        <header class="header">
+          <h1 id = "title" class="text-center">Enactus ZC Spring Recruitment</h1>
+          <p id="description" class="description text-center">Thank you for your intent to join our team</p>
+        </header>
+        <form id="survey-form" action="mailto:musgamal05@gmail.com" method=”POST” 
+      enctype=”multipart/form-data”>
+          <div class="form-group">
+            <label for="name" id = "name-label">Name</label>
+            <input type="text" name="name" id = "name" class = "form-control" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id ="email" name="email" class="form-control" placeholder="Enter your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone-number" id = "number-label">Phone Number</label>
+            <input type="tel" name="phone-number" id = "phone-number" class = "form-control" placeholder="Enter your phone number" required />
+          </div>
+           <div class="form-group">
+            <label for="number" id = "number-label">How many hours you intent to invest for this position weekly?</label>
+            <input type="number" name="number" id = "number" class = "form-control" max="168" min="1" placeholder="Enter number of hours" required />
+          </div>
+          <div class="form-group">
+            <p>Year</p>
+            <select name="year" id="dropdown" required>
+              <option disabled selected value>Select your current Year</option>
+              <option value="1">Foundation</option>
+              <option value="2">Year 2</option>
+              <option value="3">Year 3</option>
+              <option value="4">Year 4</option>
+              <option value="5">Year 5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Major (or expected)</p>
+            <select name="major" id="dropdown" required>
+              <option disabled selected value>Select your major (or expected)</option>
+              <option value="ENV">Environmental</option>
+              <option value="REE">Renewable</option>
+              <option value="BMS">Biomedical</option>
+              <option value="NANTEC">Nano Technology</option>
+              <option value="PEU">Physics</option>
+              <option value="NANSC">Nano Science</option>
+              <option value="MATSCI">Materials Science</option>
+              <option value="CIE">CIE</option>
+              <option value="SPC">Aerospace</option>
+            </select>
+          </div>
+          <div class = "form-group">
+            <p>Which position you are interested in?</p>
+            <label>
+              <input type="radio" name="position" value="Communication" class="input-radio" checked />Communication</label>
+            <label>
+              <input type="radio" name="position" value="MultiMedia" class="input-radio"  />MultiMedia</label>
+            <label>
+              <input type="radio" name="position" value="HR" class="input-radio" />HR</label>
+            <label>
+              <input type="radio" name="position" value="Marketion" class="input-radio" />Marketing</label>
+            <label>
+              <input type="radio" name="position" value="IT" class="input-radio" />IT</label>
+            <label>
+              <input type="radio" name="position" value="presentation" class="input-radio" />Presentation</label>
+            <input type="radio" name="position" value="PM" class="input-radio" />PM</label>
+            <label>
+          </div>
+          <div class = "form-group">
+            <p>Which second position you are interested in? (if any)</p>
+            <label>
+              <input type="checkbox" name="position2" value="Communication" class="input-radio" />Communication</label>
+            <label>
+              <input type="checkbox" name="position2"  value="MultiMedia" class="input-radio"  />MultiMedia</label>
+            <label>
+              <input type="checkbox" name="position2" value="HR" class="input-radio" />HR</label>
+            <label>
+              <input type="checkbox" name="position2"  value="Marketion" class="input-radio" />Marketing</label>
+            <label>
+              <input type="checkbox" name="position2"  value="IT" class="input-radio" />IT</label>
+            <label>
+              <input type="checkbox" name="position2"  value="presentation" class="input-radio" />Presentation</label>
+            <input type="checkbox" name="position2"  value="PM" class="input-radio" />PM</label>
+            <label>
+          </div>
+          <div class="form-group">
+            <p>Why do you want to join this position or what is your motivation?</p>
+            <textarea name="motivation" id="textarea" placeholder="Enter your motivation..." class="input-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
